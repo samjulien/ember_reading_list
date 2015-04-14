@@ -6,9 +6,15 @@ var Book = DS.Model.extend({
 	author: DS.attr('string'),
 	description: DS.attr('string'),
 	amazon_id: DS.attr('string'),
-	rating: DS.attr(),
+	rating: DS.attr('number'),
 	finished_on: DS.attr(),
-	genres: DS.attr(),
+	genre: DS.belongsTo('genre'),
+	url: function() {
+		return "http://www.amazon.com/gp/product/"+this.get('amazon_id');
+	}.property('amazon_id'),
+	image: function() {
+		return "http://images.amazon.com/images/P/"+this.get('amazon_id')+".01.ZTZZZZZZ.jpg";
+  	}.property('amazon_id')
 });
 
 Book.reopenClass({
