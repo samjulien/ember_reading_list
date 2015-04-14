@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="small-12 columns">
+      <form>
+        <div class="small-1 columns">
+          <label class="inline left">Search</label>
+        </div>
+        <div class="small-4 columns end">
+          <input type="text" value='' name='keyword' placeholder='Keyword' />
+        </div>
+      </form>
+  </div>  
+</div>
+<div class="row">
+  <a href="#" class="button small" id="showForm">New Book Form</a>
+</div>
+<div class="row bookForm">
+  {{!-- <%= render 'form' %> --}}
+</div>
+
+  <div class="row">
+    <div class="col-sm-10 bookList">
+     {{#each book in this}}
+     	{{render '-partials/book' book}}
+     {{/each}}
+    </div>
+    <div class="col-sm-2">
+        <h3>Genres</h3>
+        <ul>
+         {{!--  <%= link_to "All", books_path, class: 'label' %>
+          <% @genres.each do |genre| %>
+            <%= link_to genre.name, books_path(filter: genre.name), class: 'label' %>
+          <% end %> --}}
+        </ul>
+    </div>
+  </div>
+<br>
+

@@ -1,0 +1,15 @@
+<div class="row bookRow" data-book="<%= book.id %>">
+  <div class="col-sm-2">
+    {{!-- <%= image_from_amazon(book.amazon_id) %> --}}
+    <p><b>Rating:</b> {{!-- <%= book.rating %> --}}/5</p>
+  </div>
+  <div class="col-sm-8">
+    <p>{{!-- <%= link_to book.title, edit_book_path(book) %> --}}</p>
+    <p><i>Written by {{!-- <%= book.author %> --}}</i></p>
+    <p>{{!-- <%= book.description %> --}}</p>
+    <p><i>{{!-- <%= link_to "Delete Book", book, method: :delete, remote: true %> --}}</i></p>
+   {{!--  <% book.genres.each do |genre| %>
+      <span class="label" style="margin-bottom: 1.5em"><%= genre.name %></span>
+    <% end %> --}}
+  </div>
+</div>
