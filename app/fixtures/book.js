@@ -6,7 +6,7 @@ export default [
 	 amazon_id: "0553380958",
 	 rating: 5,
 	 finished_on: '2015-01-31',
-	 genre: 3},
+	 genre: 1},
 	 {
 		id: 2,
 	 	title: "Jayber Crow",
@@ -15,7 +15,7 @@ export default [
 	    amazon_id: "1582431604",
 	    rating: 4,
 	    finished_on: '2015-02-28',
-	    genre: 1},
+	    genre: 2},
 	 {
 	 	id: 3,
 	 	title: "A Timbered Choir",
@@ -24,7 +24,7 @@ export default [
 	    amazon_id: "1582430063",
 	    rating: 3,
 	    finished_on: '2015-03-15',
-	    genre: 2},
+	    genre: 4},
 	 {
 	 	id: 4,
 	 	title: "What Are People For?",
@@ -33,5 +33,5 @@ export default [
 	    amazon_id: "1582434875",
 	    rating: 4,
 	    finished_on: '2015-04-10',
-	    genre: 1},   
+	    genre: 3},   
 	];

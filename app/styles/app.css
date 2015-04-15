@@ -30,3 +30,9 @@ body {
 .breadRow {
 	margin-bottom: 0;
 }
+
+.rating {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}

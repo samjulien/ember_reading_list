@@ -8,7 +8,7 @@ var Book = DS.Model.extend({
 	amazon_id: DS.attr('string'),
 	rating: DS.attr('number'),
 	finished_on: DS.attr(),
-	genre: DS.belongsTo('genre'),
+	genre: DS.belongsTo('genre', {async: true}),
 	url: function() {
 		return "http://www.amazon.com/gp/product/"+this.get('amazon_id');
 	}.property('amazon_id'),

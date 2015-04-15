@@ -4,18 +4,5 @@
     <li class="active">{{title}}</li>
   </ol>
 </div>
-<div class="row bookRow" data-book="">
-  <div class="col-sm-2">
-    <a {{bind-attr href='this.url'}} target='_blank'>
-      <img {{bind-attr src='this.image'}} />
-    </a>
-    <p><b>Rating:</b> {{ rating }}/5</p>
-  </div>
-  <div class="col-sm-8">
-    <h3>{{ this.title }}</h3>
-    <p><i>Written by {{ this.author }}</i></p>
-    <p>{{ this.description }}</p>
-    <p><i>{{!-- <%= link_to "Delete Book", book, method: :delete, remote: true %> --}}</i></p>
-   <span class="btn btn-primary btn-xs" style="margin-bottom: 1em">{{ this.genre.name }}</span>
-  </div>
-</div>
+
+{{render '-partials/book' this.model}}

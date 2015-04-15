@@ -2,6 +2,9 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'img-src': "'self' *.amazon.com"
+    },
     modulePrefix: 'ember-reading-list',
     environment: environment,
     baseURL: '/',
