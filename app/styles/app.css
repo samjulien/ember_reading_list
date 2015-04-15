@@ -36,3 +36,9 @@ body {
 	font-size: 18px;
 	font-weight: bold;
 }
+
+.rating-5 .rating { color:#5cb85c; }
+.rating-4 .rating { color:#5cb85c; }
+.rating-3 .rating { color:#f0ad4e; }
+.rating-2 .rating { color:#d9534f; }
+.rating-1 .rating { color:#d9534f; }

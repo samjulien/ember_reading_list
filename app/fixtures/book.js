@@ -13,7 +13,7 @@ export default [
 	 	author: "Wendell Berry",
 	 	description: "Jayber Crow, born in Goforth, Kentucky, orphaned at age ten, began his search as a 'pre-ministerial student' at Pigeonville College. There, freedom met with new burdens and a young man needed more than a mirror to find himself. But the beginning of that finding was a short conversation with 'Old Grit,' his profound professor of New Testament Greek.",
 	    amazon_id: "1582431604",
-	    rating: 4,
+	    rating: 3,
 	    finished_on: '2015-02-28',
 	    genre: 2},
 	 {
@@ -22,7 +22,7 @@ export default [
 	 	author: "Wendell Berry",
 	 	description: "Berry’s Sabbath poems embrace much that is elemental to human life--beauty, death, peace, and hope.In his preface to the collection, Berry writes about the growing audience for public poetry readings. While he sees poetry in the public eye as a good thing, Berry asks us to recognize the private life of the poem.",
 	    amazon_id: "1582430063",
-	    rating: 3,
+	    rating: 2,
 	    finished_on: '2015-03-15',
 	    genre: 4},
 	 {

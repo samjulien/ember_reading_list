@@ -1,6 +1,6 @@
 # ember-reading-list
 
-This project attempts to refactor [Codeschool.com's](http://www.codeschool.com) Ember Reading List project to use the Ember CLI rather than the outdated Ember starter kit. The goal is to then hook this up to the Rails reading list API that gets created in another one of their tutorials.
+This project attempts to refactor [Codeschool.com's](http://www.codeschool.com) Ember Reading List project to use the Ember CLI rather than the outdated Ember starter kit. The goal is to then hook this up to the [Rails reading list API](https://github.com/samjulien/reading_api) that gets created in another one of their tutorials.
 
 Standard Ember CLI boilerplate from here...
 
