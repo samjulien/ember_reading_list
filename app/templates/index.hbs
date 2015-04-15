@@ -22,15 +22,15 @@
 
   <div class="row">
     <div class="col-sm-10 bookList">
-     {{#each book in orderedBooks}}
-     	{{book-detail book=book}}
-     {{/each}}
+      {{#each book in orderedBooks}}
+        {{book-detail book=book}}
+      {{/each}}
     </div>
     <div class="col-sm-2">
         <h3>Genres</h3>
-        <ul class="genreList">
-         {{#each genre in genres}}
-           <li class="btn btn-primary btn-sm">{{genre.name}}</li>
+        <ul class="list-unstyled genreList">
+         {{#each genre in orderedGenres}}
+           <li>{{#link-to 'genre' genre class='btn btn-primary btn-sm'}}{{genre.name}}{{/link-to}}</li>
          {{/each}}
         </ul>
     </div>

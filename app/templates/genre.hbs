@@ -1,0 +1,12 @@
+<div class="row breadRow">
+  <ol class="breadcrumb">
+    <li>{{#link-to 'index'}}Books{{/link-to}}</li>
+    <li class="active">{{name}}</li>
+  </ol>
+</div>
+
+{{#each book in this.books}}
+        {{book-detail book=book}}
+{{ else }}
+<li>No books found.</li>
+{{/each}}
