@@ -6,10 +6,10 @@
     <p><b>Rating:</b> {{ book.rating }}/5</p>
   </div>
   <div class="col-sm-8">
-    <h3>{{ book.title }}</h3>
+    <h3>{{#link-to 'book' book}}{{ book.title }}{{/link-to}}</h3>
     <p><i>Written by {{ book.author }}</i></p>
     <p>{{ book.description }}</p>
     <p><i>{{!-- <%= link_to "Delete Book", book, method: :delete, remote: true %> --}}</i></p>
-   <span class="label" style="margin-bottom: 1.5em; color: black">{{ book.genre.name }}</span>
+   <span class="btn btn-primary btn-xs" style="margin-bottom: 1em">{{ book.genre.name }}</span>
   </div>
 </div>

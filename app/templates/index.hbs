@@ -1,19 +1,20 @@
+<div class="row breadRow">
+  <ol class="breadcrumb">
+    <li class="active">Books</li>
+  </ol>
+</div>
 <div class="row">
-  <div class="col-sm-12">
-      <form>
-        <div class="col-sm-1">
+  <div class="col-sm-2">
+    <a href="#" class="btn btn-primary" id="showForm">New Book Form</a>
+  </div>
+  <div class="col-sm-10">
+      <form class="form-inline">
+        <div class="form-group">
           <label class="inline left">Search</label>
-        </div>
-        <div class="col-sm-4">
-          <input type="text" value='' name='keyword' placeholder='Keyword' />
+          <input type="text" class="form-control" value='' name='keyword' placeholder='Keyword' />
         </div>
       </form>
   </div>  
-</div>
-<div class="row">
-  <div class="col-sm-12">
-    <a href="#" class="btn btn-primary" id="showForm">New Book Form</a>
-  </div>
 </div>
 <div class="row bookForm">
   {{!-- <%= render 'form' %> --}}
@@ -27,9 +28,9 @@
     </div>
     <div class="col-sm-2">
         <h3>Genres</h3>
-        <ul>
+        <ul class="genreList">
          {{#each genre in genres}}
-           <li class="label">{{genre.name}}</li>
+           <li class="btn btn-primary btn-sm">{{genre.name}}</li>
          {{/each}}
         </ul>
     </div>

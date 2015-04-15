@@ -2,9 +2,9 @@ import DS from 'ember-data';
 import FixtureData from '../fixtures/book';
 
 var Book = DS.Model.extend({
-	title: DS.attr('string'),
-	author: DS.attr('string'),
-	description: DS.attr('string'),
+	title: DS.attr(),
+	author: DS.attr(),
+	description: DS.attr(),
 	amazon_id: DS.attr('string'),
 	rating: DS.attr('number'),
 	finished_on: DS.attr(),
