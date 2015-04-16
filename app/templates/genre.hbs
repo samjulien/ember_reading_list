@@ -8,5 +8,9 @@
 {{#each book in this.books}}
         {{book-detail book=book}}
 {{ else }}
-<li>No books found.</li>
+<div class="row bookRow">
+	<div class="col-sm-12">
+		<p><i>No books found in this genre.</i></p>
+	</div>
+</div>
 {{/each}}

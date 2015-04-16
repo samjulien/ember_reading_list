@@ -1,0 +1,66 @@
+<div class="row breadRow">
+  <ol class="breadcrumb">
+    <li>{{#link-to 'index'}}Books{{/link-to}}</li>
+    <li class="active">New</li>
+  </ol>
+</div>
+
+<div class="row">
+	<form class="form-horizontal" role="form">
+		<div class="form-group">
+			<div class="col-sm-offset-3 col-sm-6">
+	      		<label for="book_title">Book Title</label>	
+	      		{{input class="form-control" id="book_title" placeholder="Book Title" valueBinding="model.title"}}
+      		</div>
+  		</div>
+  		<div class="form-group">
+  			<div class="col-sm-offset-3 col-sm-6">
+      			<label for="book_author">Book Author</label><br>
+      			{{input class="form-control" id="book_author" placeholder="Book author" valueBinding="model.author"}}
+      		</div>
+  		</div>
+  		<div class="form-group">
+  			<div class="col-sm-offset-3 col-sm-6">
+      			<label for="book_description">Description</label><br>
+      			{{textarea class="form-control" id="book_description" placeholder="Book description" valueBinding="model.description"}}
+      		</div>	
+  		</div>
+  		<div class="form-group">
+  			<div class="col-sm-offset-3 col-sm-6">
+      			<label for="book_amazon_id">Amazon ID</label><br>
+      			{{input class="form-control" id="book_amazon_id" placeholder="Book Amazon ID" valueBinding="model.amazon_id"}}
+      		</div>
+  		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-3 col-sm-6">
+      			<label for="book_genre">Genre</label><br>
+      			{{view "select" 
+      				content=genres 
+      				optionLabelPath="content.name"
+      				optionValuePath="content.id"
+      				selectionBinding="model.genre"
+      				class="form-control" 
+      				id="book_genre"
+      				prompt="Select a genre..."}}
+      		</div>
+  		</div>
+  		<div class="form-group">
+  			<div class="col-sm-offset-3 col-sm-6">
+      			<label for="book_rating">Rating</label><br>
+      			{{view "select" 
+      				content=ratings 
+      				valueBinding="model.rating" 
+      				class="form-control" 
+      				prompt="Select a book rating..." 
+      				id="book_rating"}}
+      		</div>
+  		</div>
+  		<div class="form-group">
+      		 <div class="col-sm-offset-3 col-sm-10">
+      			<button type="submit" class="btn btn-primary" {{ action 'createReview'}}>Save Review</button>
+    		</div>
+  		</div>
+  	</form>
+</div>
+<hr/>
+{{book-detail book=model}}
