@@ -8,7 +8,7 @@ export default Ember.Route.extend({
     });
   },
   setupController: function(controller, model) {
-    controller.set('books', model.books);
-    controller.set('genres', model.genres);
+    controller.set('books', model.books.sortBy('title'));
+    controller.set('genres', model.genres.sortBy('name'));
   }
 });
