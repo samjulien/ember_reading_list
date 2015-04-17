@@ -11,6 +11,10 @@ var App = Ember.Application.extend({
   Resolver: Resolver
 });
 
+import { setCsrfUrl } from 'rails-csrf/config';
+
+setCsrfUrl('http://localhost:3000/api/csrf');
+
 loadInitializers(App, config.modulePrefix);
 loadInitializers(App, 'rails-csrf');
 
