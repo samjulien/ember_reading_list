@@ -1,6 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  beforeModel: function() {
+    return this.csrf.fetchToken();
+  },
   model: function() {
     return Ember.RSVP.hash({
       books: this.store.findAll('book'),
