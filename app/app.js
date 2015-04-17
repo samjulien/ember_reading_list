@@ -11,6 +11,7 @@ var App = Ember.Application.extend({
   Resolver: Resolver
 });
 
-loadInitializers(App, config.modulePrefix, 'rails-csrf');
+loadInitializers(App, config.modulePrefix);
+loadInitializers(App, 'rails-csrf');
 
 export default App;

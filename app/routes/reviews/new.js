@@ -1,6 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+	beforeModel: function() {
+    return this.csrf.fetchToken();
+  	},
 	model: function() {
 		return Ember.RSVP.hash({
       		book: this.store.createRecord('book'),

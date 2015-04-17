@@ -3,7 +3,8 @@
 module.exports = function(environment) {
   var ENV = {
     contentSecurityPolicy: {
-      'img-src': "'self' *.amazon.com"
+      'img-src': "'self' *.amazon.com",
+      'connect-src': "'self' ws://localhost:35729 ws://0.0.0.0:35729 http://localhost:3000"
     },
     modulePrefix: 'ember-reading-list',
     environment: environment,
