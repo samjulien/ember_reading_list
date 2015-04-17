@@ -10,10 +10,8 @@
   <div class="col-sm-8">
     <h3>{{#link-to 'book' book}}{{ book.title }}{{/link-to}}</h3>
     <p><i>Written by {{ book.author }}</i></p>
-    <p>{{ book.description }}</p>
+    <p>{{ book.review }}</p>
     <p><i>{{!-- <%= link_to "Delete Book", book, method: :delete, remote: true %> --}}</i></p>
-    {{#each genre in book.genres}}
-   <span>{{#link-to 'genre' genre class="btn btn-primary btn-xs"}} {{ genre.name }}{{/link-to}}</span>
-    {{/each}}
+   <span>{{#link-to 'genre' book.genre class="btn btn-primary btn-xs"}} {{ book.genre.name }}{{/link-to}}</span>
   </div>
 </div>

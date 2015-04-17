@@ -4,10 +4,10 @@ import FixtureData from '../fixtures/book';
 var Book = DS.Model.extend({
 	title: DS.attr(),
 	author: DS.attr(),
-	description: DS.attr(),
+	review: DS.attr(),
 	amazon_id: DS.attr('string'),
 	rating: DS.attr('number'),
-	genres: DS.hasMany('genre', {async: true}),
+	genre: DS.belongsTo('genre', {async: true}),
 	url: function() {
 		return "http://www.amazon.com/gp/product/"+this.get('amazon_id');
 	}.property('amazon_id'),

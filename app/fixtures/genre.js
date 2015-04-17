@@ -7,7 +7,7 @@ export default [
   {
     id: 2,
     name: 'Fiction',
-    books: [1,2]
+    books: [2]
   },
   {
     id: 3,
