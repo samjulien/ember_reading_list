@@ -5,7 +5,7 @@ export default [
 	 description: "Only once in a great while does a writer come along who defies comparison—a writer so original he redefines the way we look at the world. Neal Stephenson is such a writer and Snow Crash is such a novel, weaving virtual reality, Sumerian myth, and just about everything in between with a cool, hip cybersensibility to bring us the gigathriller of the information age.",
 	 amazon_id: "0553380958",
 	 rating: 5,
-	 genres: [1]},
+	 genres: [1,2]},
 	 {
 		id: 2,
 	 	title: "Jayber Crow",
@@ -13,7 +13,7 @@ export default [
 	 	description: "Jayber Crow, born in Goforth, Kentucky, orphaned at age ten, began his search as a 'pre-ministerial student' at Pigeonville College. There, freedom met with new burdens and a young man needed more than a mirror to find himself. But the beginning of that finding was a short conversation with 'Old Grit,' his profound professor of New Testament Greek.",
 	    amazon_id: "1582431604",
 	    rating: 3,
-	    genres: [2, 1]},
+	    genres: [2]},
 	 {
 	 	id: 3,
 	 	title: "A Timbered Choir",
@@ -21,7 +21,7 @@ export default [
 	 	description: "Berry’s Sabbath poems embrace much that is elemental to human life--beauty, death, peace, and hope.In his preface to the collection, Berry writes about the growing audience for public poetry readings. While he sees poetry in the public eye as a good thing, Berry asks us to recognize the private life of the poem.",
 	    amazon_id: "1582430063",
 	    rating: 2,
-	    genres: [4, 2]},
+	    genres: [4]},
 	 {
 	 	id: 4,
 	 	title: "What Are People For?",
